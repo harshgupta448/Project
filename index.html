@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- cdn link for icons   -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bg-blue {
+            background-color: #004281;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .top {
+            height: 50px;
+            width: 50px;
+            border: 1px solid black;
+            border-radius: 50%;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .head {
+            text-align: center;
+
+        }
+
+        .card-title {
+            text-align: center
+        }
+
+        @media (min-width: 992px) {
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 2.5rem;
+                padding-left: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Section Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="Assests\Images\asset 0.png" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><b>About Us</b></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"><b>Services</b>
+
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery"><b>Gallery</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><b>Contact Us</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Section End -->
+
+    <!-- Carousal Section Start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assests\Images\asset 1.jpeg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assests\Images\26.avif" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assests\Images\asset 3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assests\Images\asset 1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assests\Images\26.avif" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousal Section End-->
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12  col-md-6  col-xl-3 ">
+                <div class="shadow m-3 p-3">
+                    <h4 class="head"><i class="bi bi-book "></i> <b>LEARNING </b> </h4> We transmit the values, attitude
+                    and behaviours .We aim to impact education to create a dynamic future generation.
+                </div>
+            </div>
+            <div class="col-12  col-md-6  col-xl-3 ">
+                <div class="shadow m-3 p-3">
+                    <h4 class="head"><i class="bi bi-person-fill-gear"></i><b>IMPLEMENTATION</b></h4>We help students to
+                    implement a plan into effect,including monitoring progress, adjusting, evaluating impact.
+                </div>
+            </div>
+            <div class="col-12 col-md-6  col-xl-3 ">
+                <div class="shadow m-3 p-3">
+                    <h4 class="head"><i class="bi bi-bar-chart-line-fill"></i><b>PROGRESS</b></h4> We preapare students
+                    to excel by overcoming challenges. We aim at the students holistic growth in the most exciting way.
+                </div>
+            </div>
+            <div class="col-12  col-md-6 6 col-xl-3 ">
+                <div class="shadow m-3 p-3">
+                    <h4 class="head"><i class="bi bi-trophy-fill"></i><b>SUCCESS</b></h4> We focus on all students and
+                    motivate them to achieve academic success. We help to reach their full potential.
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row mt-3">
+            <div class="col">
+                <div class="shadow m-3 p-3"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, ab?</div>
+            </div>
+            <div class="col">
+                <div class="shadow m-3 p-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ex.
+                </div>
+            </div>
+            <div class="col">
+                <div class="shadow m-3 p-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti.</div>
+            </div>
+            <div class="col">
+                <div class="shadow m-3 p-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    blanditiis?</div>
+            </div>
+            <div class="col">
+                <div class="shadow m-3 p-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+                    blanditiis?</div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- EVENT SECTION START -->
+    <div class="container">
+        <h3 class="text-center my-3"><b>EVENTS</b></h3>
+        <div class="row">
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card m-2">
+                    <img src="Assests\Images\asset 11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Moral Acts</b></h5>
+                        <p class="card-text">On Independence Day, life of different freedom fighters are inacted on
+                            stage to make students aware about real heroes of India.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card m-2">
+                    <img src="Assests\Images\asset 12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Abhinandan</b></h5>
+                        <p class="card-text">Every year at last of session annual function is organised where all
+                            talents are respected , appreciated and encouraged.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4">
+                <div class="card m-2">
+                    <img src="Assests\Images\asset 13.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Manch Abhinay</b></h5>
+                        <p class="card-text">Hindi Saptah is celebrated where different acts are performed by students
+                            in hindi in order to make aware about thier mother tounge.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EVENT SECTION END -->
+
+    <!-- ABOUT SECTION START -->
+    <div class="container-fluid my-3 bg-blue pb-5" id="about">
+        <div class="container">
+            <div class="text-center py-4">
+                <h2 class="text-white"><b>ABOUT US</b></h2>
+                <img src="Assests\Images\asset 4.png" class="img-fluid text-center">
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="bg-white p-3 pb-5 m-1">
+                        <h4 class="text-white bg-blue text-center">Our Vision</h4>
+                        <p>
+                        <h6 class="head">“Vision without action is a daydream. Action without vision is a nightmare.”
+                        </h6>In the pursuit of excellence and with a motto of “Service before Self”, our vision is to
+                        achieve highest standards in education by empowering our students to be self-directed life-long
+                        learners who visualise problems from a different perspective, be astounding decision makers and
+                        find novel solutions by thinking critically, working and communicating with an impactful
+                        expression. </p>
+                        <button class="btn bg-blue text-white float-end">Read More</button>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="bg-white p-3 pb-5 m-1">
+                        <h4 class="text-white bg-blue text-center">Our Mission</h4>
+                        <p>
+                        <h6 class="head"> "Life without Mission is a body without soul"</h6>To create excellent learning
+                        ambition through innovation in teaching, research and consultancy for producing profesionals
+                        capable of answering global challenges and demoinstrating high ethical and moral standards. we
+                        our making our learners problem oriented thinkers with the help of core values of integrity,
+                        perseverance, resilience, and discipline. </p>
+                        <button class="btn bg-blue text-white float-end">Read More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION END -->
+
+    <!-- FAQ START -->
+    <div class="container">
+        <h2 class="text-center my-3"><b>F.A.Q</b></h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Why should we choose you ?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You should chose ST. Francic because of its strong reputation for
+                        academic excellence, diverse student body and supportive communinty, as well as its focus on
+                        providing a well-rounded education that includes extracurriculum activities and character
+                        development.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        What are your Student - Teacher Ratio?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We have large military of teachers. each class contain 20 students with
+                        different teachers for different subjects . So, 1:20 ratio on each subject.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What are Qualification and educational training Of Teachers and staff?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">All the educational staff are graduated and have TGT AND PGT
+                        degree.Whereas others staff have also completed their basic studies and have knowledge how to
+                        treat with students. </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Which curriculam do you follow and why?
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The CBSE Central Board of Secondary Educationt curriculum is followed
+                        because it offers a standardized curriculum that is recognized nationally and internationally.
+                        This provides students with mobility and allows them to prepare for national-level competitive
+                        exams effectively.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        What sports are initiated ?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">All kinds of games are initiated as per students demand and interest .
+                        We have playing equipments of all games.As playing sports and games helps students improve their
+                        self-esteem, social skills, and confidence. It also teaches them about time management and
+                        discipline. Moreover, it can also be used as a career path or hobby. Besides, it helps students
+                        reduce stress and depression.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What safety measures do you follow for students safety?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> We follow all possible safety precaution including e surveillance
+                        systems, strict visitor protocols, regular safety drills, and robust health and hygiene
+                        practices. Exit routes are clear to facilitate safe evacuation in case of fire or other
+                        emergency. Detection and alarm systems (especially urban set ups) are working. Fire
+                        extinguishers are regularly refilled.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY SECTION START -->
+    <div class="container-fluid my-3 bg-blue pb-5" id="gallery">
+        <div class="container">
+            <div class="text-center py-4">
+                <h2 class="text-white"><b>GALLERY</b></h2>
+                <img src="" class="img-fluid text-center">
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 ">
+                    <div class="m-3">
+                        <img src="Assests\Images\bharatanatyam.jpg" class="img-fluid">
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="">
+                                    <img src="Assests\Images\singing.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="">
+                                    <img src="Assests\Images\art.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="">
+                                    <img src="Assests\Images\sports-game.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="">
+                                    <img src="Assests\Images\Awards3.jpg" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GALLERY SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <div class="container" id="contact">
+        <h2 class="text-center my-4"><b>Contact Us</b></h2>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="shadow p-4">
+                    <form action="/contact" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" name="name" placeholder="Username" class="form-control"
+                                id="exampleInputEmail1">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" name="email" placeholder=" Email" class="form-control"
+                                id="exampleInputEmail1">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                            <input type="string" name="phone" placeholder="Number" class="form-control">
+                        </div>
+                        <label for="exampleInputPassword1" class="form-label">Enter your Message</label>
+                        <textarea name="message" placeholder=" Comments" class="form-control"></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="">
+                    <div style="overflow:hidden;resize:none;max-width:100%;width:500px;height:500px;">
+                        <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe
+                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56957.57175582663!2d80.96827821249246!3d26.84477898176873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd49fc60a843%3A0x92fc72e19b623f6a!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1746603414217!5m2!1sen!2sin"></iframe>
+                        </div><a class="googlemaps-made" href="https://www.bootstrapskins.com/themes"
+                            id="get-map-data">premium bootstrap themes</a>
+                        <style>
+                            #embed-map-canvas img {
+                                max-width: none !important;
+                                background: none !important;
+                                font-size: inherit;
+                                font-weight: inherit;
+                            }
+                        </style>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- FOOTER SECTION -->
+
+
+    <div class="container-fluid bg-blue">
+        <div class="container">
+            <div class="row py-4 text-white">
+                <div class="col-3">
+                    <div class="">
+                        <h2>About St. Francis</h2>
+                        <p>To become a constantly growing center of excellence, imparting value based education of
+                            highest standards, relevant to contemporary world.</p>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="">
+                        <h2>News</h2>
+                        <p>Press & Media</p>
+                        <p>Monthly Bulletin</p>
+                        <p>Annual Magazine</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <h2> Media</h2>
+                        <p>Photographs</p>
+                        <p>Videos</p>
+                        <p> Notices and Curriculum</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <h2>Policies</h2>
+                        <p>Disclaimer</p>
+                        <p>Privacy Policy</p>
+                        <p>Copyright Policies</p>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="">
+                        <h2>Guiding Values</h2>
+                        <p>Trust, Sense of Ownership, Sense of Contribution, Innovation, Modesty & Mutual Respect,
+                            Leadership based onethical and moral attributes.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="top">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+<!-- 
+t-top
+b-bottom
+y- top and bottom
+x- right and left (start and end)
+s- start (left)
+e - end ( right) -->
+
+</html>
